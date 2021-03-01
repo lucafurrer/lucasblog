@@ -26,5 +26,6 @@ jobs:
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         port: 21
-        protocol: ftps
+        protocol: ftps-legacy
         server-dir: /home/ch73732/web/luca.furrer-haab.ch/public_html/
+        local-dir: /srv/jekyll/_site
