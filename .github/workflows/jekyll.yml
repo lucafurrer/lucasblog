@@ -22,9 +22,9 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ftp.samkirkland.com
-        username: github
+        server: lx49.hoststar.hosting
+        username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         port: 5544
         protocol: ftps
-        server-dir: /home/ch73732/web/luca.furrer-haab.ch/public_html
+        server-dir: /home/ch73732/web/luca.furrer-haab.ch/public_html/
