@@ -4,5 +4,5 @@ Blog setup with [Jekyll](https://jekyllrb.com/) with the [Cadre theme](https://g
 
 ## Build locally
 
-1. Follow the [installation guide](https://jekyllrb.com/docs/) of jekyll
+1. Follow the [installation guide](https://jekyllrb.com/docs/) of Jekyll
 2. execute `bundle exec jekyll serve --livereload`
