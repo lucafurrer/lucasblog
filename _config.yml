@@ -21,8 +21,8 @@
 title: Luca's blog
 email: luca@furrer-haab.ch
 description: >- # this means to ignore newlines until "baseurl:"
-  I think I will write about what ever passes through my mind, but I guess it will be rather
-  technical and data focused.
+  Luca Furrer is interested in getting something out of data and software development 
+  and is writing about whatever interesting crosses his path.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "luca.furrer-haab.ch" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Luca_Furrer
@@ -33,6 +33,12 @@ github_username:  lucafurrer
 theme: jekyll-theme-cadre
 plugins:
   - jekyll-feed
+
+# Images
+about_img: assets/images/photo_luca.jpeg
+favicon_img: assets/images/LFLogo.png
+# navbar_img: assets/images/LFLogo.png
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
