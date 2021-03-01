@@ -26,5 +26,5 @@ jobs:
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         port: 5544
-        protocol: ftps
+        protocol: sftp
         server-dir: /home/ch73732/web/luca.furrer-haab.ch/public_html/
