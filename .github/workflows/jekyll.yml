@@ -18,3 +18,13 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 777 /srv/jekyll && jekyll build --future"
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ftp.samkirkland.com
+        username: github
+        password: ${{ secrets.ftp_password }}
+        port: 5544
+        protocol: ftps
+        server-dir: /home/ch73732/web/luca.furrer-haab.ch/public_html
