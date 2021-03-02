@@ -27,7 +27,7 @@ jobs:
         password: ${{ secrets.ftp_password }}
         port: 21
         protocol: ftp
-        server-dir: /home/ch73732/web/luca.furrer-haab.ch/public_html/
+        #server-dir: /home/ch73732/web/luca.furrer-haab.ch/public_html/
         local-dir: ${{ github.workspace }}/_site/
         state-name: ../.ftp-deploy-sync-state.json
         log-level: verbose
