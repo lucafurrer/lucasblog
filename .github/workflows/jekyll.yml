@@ -23,10 +23,10 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: lx49.hoststar.hosting
-        username: ${{ secrets.FTP_USER }}
+        username: '${{ secrets.FTP_USER }}'
         password: '${{ secrets.FTP_PASSWORD }}'
         #port: 21
-        protocol: ftps
+        #protocol: ftps
         #server-dir: /home/ch73732/web/luca.furrer-haab.ch/public_html/
         #local-dir: ${{ github.workspace }}/_site/
         #state-name: ../.ftp-deploy-sync-state.json
