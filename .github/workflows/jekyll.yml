@@ -24,7 +24,7 @@ jobs:
       with:
         server: lx49.hoststar.hosting
         username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.asdf }}
+        password: '${{ secrets.FTP_PASSWORD }}'
         #port: 21
         protocol: ftps
         #server-dir: /home/ch73732/web/luca.furrer-haab.ch/public_html/
