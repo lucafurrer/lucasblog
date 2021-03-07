@@ -19,12 +19,15 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Luca's blog
-email: luca@furrer-haab.ch
+# email: luca@furrer-haab.ch
 description: >- # this means to ignore newlines until "baseurl:"
-  Luca Furrer is interested in getting something out of data and software development 
-  and is writing about whatever interesting crosses his path.
+  After his studies in Applied Mathematics Luca Furrer applied and extended his knowledge 
+  in the professional world and learned more and more about software development. 
+  
+  And the journey of learning goes on and on this site you can find some of his discoveries and comments. 
+  Depending on what comes in you can expect some stuff around data analytics, data science and software development.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "luca.furrer-haab.ch" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://luca.furrer-haab.ch" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Luca_Furrer
 github_username:  lucafurrer
 
