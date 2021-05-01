@@ -24,6 +24,6 @@ jobs:
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
         port: ${{ secrets.PORT }}
-        scp_source: ${{ github.workspace }}/_site/
+        scp_source: ${{ github.workspace }}/_site/*
         scp_target: /
 
