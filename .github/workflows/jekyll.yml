@@ -27,4 +27,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         port: ${{ secrets.PORT }}
         source: ${{ github.workspace }}/_site/
-        target: "."
+
