@@ -18,7 +18,7 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 777 /srv/jekyll && jekyll build --future"
-
+    #https://github.com/kostya-ten/ssh-server-deploy
     - name: Sync files
       uses: kostya-ten/ssh-server-deploy@v4
       with:
@@ -27,4 +27,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         port: ${{ secrets.PORT }}
         scp_source: ${{ github.workspace }}/_site/
-        scp_target: ~/
+        scp_target: test
