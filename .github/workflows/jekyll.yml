@@ -27,4 +27,3 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         port: ${{ secrets.PORT }}
         scp_source: ${{ github.workspace }}/_site/
-        scp_target: test
