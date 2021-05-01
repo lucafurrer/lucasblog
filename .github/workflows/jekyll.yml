@@ -20,14 +20,11 @@ jobs:
         jekyll/builder:latest /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 777 /srv/jekyll && jekyll build --future"
     
     - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      uses: appleboy/scp-action@master
       with:
-        server: lx49.hoststar.hosting
+        host: ${{ secrets.HOST }}
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
-        #port: 21
-        #protocol: ftps
-        #server-dir: /home/ch73732/web/luca.furrer-haab.ch/public_html/
-        #local-dir: ${{ github.workspace }}/_site/
-        #state-name: ../.ftp-deploy-sync-state.json
-        #log-level: verbose
+        port: ${{ secrets.PORT }}
+        source: ${{ github.workspace }}/_site/
+        target: "."
