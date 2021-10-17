@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Fun with data and more
+title: Luca Furrer - Fun with data and more
 # email: luca@furrer-haab.ch
 description: >- # this means to ignore newlines until "baseurl:"
   After his studies in Applied Mathematics Luca Furrer applied and extended his knowledge 
